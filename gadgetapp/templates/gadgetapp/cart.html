@@ -1,0 +1,51 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="row pb-4">
+    <div class="col-md-7 offset-md-2">
+        <h2 class="mt-4 mb-4">Cart Items </h2>
+        
+        <div class="card">
+            <div class="card-body">
+                {% for cart_item in cart_items %}
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="{{ cart_item.gadget.image.url }}" class="img-fluid rounded pt-2 pb-2" alt="{{ cart_item.gadget.name }}">
+                            <hr>
+                        </div>
+                    
+                        <div class="col-md-6 pt-2" id="size">
+                        <p>{{ cart_item.gadget.name }}</p>  
+                        <p>Price : &#8377; {{ cart_item.gadget.price }}</p>
+                        <p>Quantity : {{ cart_item.quantity }}</p>
+
+                        </div>
+                        <div class="col-md-2 ms-auto" id="deco">
+                            <a href="{% url 'remove_from_cart' cart_item.id %}" class="ps-4">&times;</a>
+                            
+                        </div>
+
+                        
+                    </div>
+                {% endfor %}
+                <p>Total amount : <b>&#8377; {{ total_amount }}</b></p>
+                <form action="{% url 'proceed_to_pay' %}" class="pt-2" method="get">
+                    {% csrf_token %}
+                    <div>
+                        <input type="hidden" name="total_amount" value="total_amount">
+                        <button type="submit" class="btn btn-primary">proceed</button>
+                        
+                    </div>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

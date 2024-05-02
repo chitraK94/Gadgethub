@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="input-group">
+        <input type="text" class="form-control p-2" name="email" placeholder="Your Email">
+        <button type="submit" class="btn btn-success text-dark font-weight-bold">Submit</button>
+    </div>
+</form>
+
+
+{% endblock %}

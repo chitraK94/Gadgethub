@@ -1,0 +1,189 @@
+body{
+
+    margin: 0;
+    font-family: poppins, serif;
+    
+    
+}
+
+
+#trans{
+
+    background-color: rgba(1, 10, 10, 0.8); 
+
+}
+
+#size{
+
+    font-size:smaller;
+}
+
+#id1{
+
+    padding-top: 100px;
+    
+}
+
+
+
+#colr{
+
+    color: aliceblue;
+}
+
+#deco{
+
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 60px;
+
+}
+
+#deco a{
+
+    text-decoration: none;
+}
+
+
+
+#font {
+
+    font-family: poppins, serif;
+}
+
+#dist{
+
+    padding-left: 300px;
+    margin-bottom: 20px;
+}
+
+#div1{
+
+    max-width: 550px;
+    height:530px ;
+    margin-top: 40px;
+    box-shadow: 0 0 10px 2px rgb(209, 225, 239);
+    border-radius: 10px;
+
+
+}
+
+
+#div2{
+
+    max-width: 550px;
+    height:600px ;
+    margin-top: 8px;
+    box-shadow: 0 0 10px 2px rgb(209, 225, 239);
+    border-radius: 10px;
+
+
+}
+
+form label{
+
+    font-weight: bold;
+}
+
+form input
+
+{
+    padding: 4px;
+    border: 2px solid rgb(209, 225, 239);
+    border-radius: 5px;
+
+}
+
+#loginbox{
+
+    box-shadow: 0 0 10px 2px rgb(209, 225, 239);
+    max-width: 400px;
+    height: 340px;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin: auto;
+
+    
+}
+
+#topm{
+
+    margin-top: 74px;
+}
+
+#length{
+
+    width: 100%;
+}
+
+#caro{
+
+    background-color: rgb(21, 125, 135);
+
+}
+
+
+
+
+footer{
+
+    font-size: small;
+    margin-top: 100px;
+    
+    
+}
+
+footer a{
+
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 35%; 
+    left: 37%; 
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.text-overlay2 {
+    position: absolute;
+    top: 35%; 
+    left: 65%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#font1{
+
+    font-size: x-small;
+}
+
+#hl4{
+
+    padding-left: 160px;
+    padding-bottom: 40px;
+    font-weight: bolder
+}
+
+#hl5{
+
+    padding-left: 400px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#pd1{
+
+    padding-left: 280px;
+    padding-bottom: 30px;
+}
+
+

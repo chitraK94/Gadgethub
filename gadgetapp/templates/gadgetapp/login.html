@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="row mt-4" id="loginbox">
+
+    <div class="col-md-5">
+        <h2 class="mt-2 md-2">Login</h2>
+
+        <form method="post" class="pt-4">
+            {% csrf_token %}
+
+            <label for="username"><img src="{% static 'images/profile.png' %}" height="24px" width="24px">   Username</label>
+            <input type="text" name="username" class="mb-2 mt-2"><br>
+
+            <label for="password" class="mt-2"><img src="{% static 'images/password.png' %}" height="24px" width="24px">   Password</label>
+            <input type="password" name="password" class="mb-2 mt-2"><br><br>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+            
+        </form>
+    </div>
+
+
+
+</div>
+{% endblock %}

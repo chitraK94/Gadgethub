@@ -1,0 +1,147 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block banner-slider %}
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="caro">
+            <div class="carousel-item active">
+                <img src="{% static 'images/sl1.png' %} " height= '500px'  class="d-block w-100" alt="...">
+                <div class="text-overlay">
+                    <p id="font1">FROM</p>
+                    <h4>&#8377; 5,000</h4>
+                    <h1>When buying <br>a new phone</h1>
+                    <h6>Tips for Traveling with Electronics Devices</h6>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/sl2.png' %}" height= '500px' class="d-block w-100" alt="...">
+                <div class="text-overlay2">
+                    <p id="font1">FROM</p>
+                    <h4>&#8377; 2,000</h4>
+                    <h1>Unlock new <br>Possibilities</h1>
+                    <h6>Photos, clear and steady, even in light</h6>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/sl3.png' %}" height= '500px' class="d-block w-100" alt="...">
+                <div class="text-overlay">
+                    <p id="font1">FROM</p>
+                    <h4>&#8377; 2,000</h4>
+                    <h1>Electronic  <br>Devices</h1>
+                    <h6>Four Ways to Cool Compact Electronics <br>Devices</h6>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/sl2.png' %}" height= '500px' class="d-block w-100" alt="...">
+                <div class="text-overlay2">
+                    <p id="font1">FROM</p>
+                    <h4>&#8377; 2,000</h4>
+                    <h1>Unlock new <br>Possibilities</h1>
+                    <h6>Photos, clear and steady, even in light</h6>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+<div class="row pt-4" id="dist">        
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'mobiles' %}"><img src="{% static 'images/redmi13.jpg' %} " class="img-fluid "  alt="..."></a>
+    
+    <h6 class="ps-2">Mobiles</h6>
+
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'ipads' %}"> <img src="{% static 'images/ipad11pro.jpg' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2">Ipads</h6>
+    
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'desktops' %}"><img src="{% static 'images/acerdesk.png' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2">Desktops</h6>
+    
+    </div>
+    <div class="col-md-1 card p-2 ms-2 ">
+
+    <a href="{% url 'category' 'television' %}"><img src="{% static 'images/samtv.jpg' %} " class="img-fluid pt-1"  alt="..."></a>
+    <h6 class="ps-1 pt-4">Television</h6>
+    
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'camera' %}"><img src="{% static 'images/nikondslr.png' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2">Camera</h6>
+
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'tablets' %}"><img src="{% static 'images/lenovotabm10.png' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2">Tablets</h6>
+    
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'headphones' %}"><img src="{% static 'images/earbuds.png' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2">Earbuds</h6>
+    
+    </div>
+    <div class="col-md-1 card p-2 ms-2">
+
+    <a href="{% url 'category' 'printers' %}"><img src="{% static 'images/printer.png' %} " class="img-fluid "  alt="..."></a>
+    <h6 class="ps-2 pt-2">printers</h6>
+    
+    </div> 
+
+</div>
+
+{% endblock banner-slider %}
+
+{% block content %}
+
+
+    <div class="row" id="font">
+
+        
+
+    <h4 id="hl4">Welcome to GadgetHub - Your Ultimate Destination for Electronics Gadgets!</h4><br><br>
+
+    <h5 id="hl5">Explore the Latest in Tech Innovation</h5>
+    <p id="pd1">At GadgetHub, we bring you the cutting-edge world of electronics<br>
+    gadgets. Discover the latest and greatest innovations that redefine the way we<br> 
+    live, work, and play. From sleek smartphones to powerful smart home devices, we<br>
+    curate a collection that combines style, functionality, and top-notch performance.</p>
+
+    
+    <h5 id="hl5">Our Featured Categories</h5>
+    <p id="pd1">Smartphones & Accessories: Stay connected with the latest smartphones,<br>
+    accessories, and must-have gadgets that keep you on the forefront of mobile technology.<br>
+    Smart Home Solutions: Transform your living space with our smart home devices.<br>
+    From intelligent lighting to home security, we have the gadgets that make your<br>
+    home smarter and more efficient. Wearable Technology: Elevate your lifestyle with<br>
+    our range of wearables. Track your fitness, stay connected on the go, and embrace a<br> 
+    healthier, more tech-savvy you.</p>
+
+    <h5 id="hl5">Why Choose GadgetHub</h5>
+    <p id="pd1">Quality Assurance: We pride ourselves on offering high-quality gadgets from <br>
+    trusted brands. Each product undergoes rigorous testing to ensure performance and durability.<br>
+    Expert Advice: Our team of tech enthusiasts is here to assist you. Whether you need guidance <br>
+    on choosing the right gadget or troubleshooting tips, we've got you covered.<br>
+    Secure Shopping: Enjoy a safe and secure shopping experience. We prioritize your privacy <br>
+    and use the latest security measures to protect your transactions.</p>
+
+
+    </div>
+
+
+{% endblock %}

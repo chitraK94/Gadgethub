@@ -1,0 +1,42 @@
+{% extends 'index.html' %}
+
+{% block title %} Pets Detail Page {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="container pt-4">
+        <h3>Payment Confirmation</h3>
+        <button id="razorpay" type="button" class="btn btn-success ms-4">Pay With Razorpay</button>
+
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <script>
+            document.getElementById('razorpay').addEventListener('click', function(e){
+
+                var options ={
+                    key: "{{ razorpay_key_id }}",
+                    amount: '{{ order_amount }}',
+                    currency : 'INR',
+                    name: 'chitra kalbende',
+                    description: 'Pet Purchase Description',
+                    prefill: {
+                        name : 'chitrakalbende',
+                        email: 'cskk94@gmail.com'
+                    },
+                    theme : {
+                        color: "#d6a318"
+                    },
+                    handler: function(response){
+                        alert('Payment Successful')
+                    }
+                };
+
+    
+                var razor_object = new Razorpay(options);
+    
+                razor_object.open();
+                e.preventDefault();
+            });
+        </script>
+    </div>
+</div>
+{% endblock %}

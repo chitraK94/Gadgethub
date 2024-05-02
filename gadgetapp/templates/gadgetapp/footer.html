@@ -1,0 +1,72 @@
+
+<div class="container-fluid bg-dark text-white mt-5 py-5 " id="length">
+    <div class="container pt-5">
+        <div class="row g-5">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase border-start border-5 border-success ps-3 mb-4 font-weight-bold">Get In Touch</h5>
+                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et etdolor sed dolor</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-success me-2"></i>24 street, Pashan,Pune</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-success me-2"></i>gadgethub@info.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-success me-2"></i>+023 345 67890</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-success ps-3 mb-4 font-weight-bold">Categories</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                    <a class="mb-2" href="{% url 'category' 'laptops' %}"><i class="bi bi-arrow-right text-success me-2"></i>Laptops</a>
+                    <a class="mb-2" href="{% url 'category' 'desktops' %}"><i class="bi bi-arrow-right text-success me-2"></i>Desktops</a>
+                    <a class="mb-2" href="{% url 'category' 'television' %}"><i class="bi bi-arrow-right text-success me-2"></i>Television</a>
+                    <a class="mb-2" href="{% url 'category' 'mobiles' %}"><i class="bi bi-arrow-right text-success me-2"></i>Mobiles</a>
+                    <a class="mb-2" href="{% url 'category' 'tablets' %}"><i class="bi bi-arrow-right text-success me-2"></i>Tablets</a>
+                    <a class="mb-2" href="{% url 'category' 'ipads' %}"><i class="bi bi-arrow-right text-success me-2"></i>Ipads</a>
+                    <a class="mb-2" href="{% url 'category' 'printers' %}"><i class="bi bi-arrow-right text-success me-2"></i>Printers</a>
+                    <a class="mb-2" href="{% url 'category' 'cameras' %}"><i class="bi bi-arrow-right text-success me-2"></i>Cameras</a>
+                    <a href="{% url 'category' 'headphones' %}"><i class="bi bi-arrow-right text-success me-2"></i>Headphones</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-success ps-3 mb-4 font-weight-bold">Quick Links</h5>
+                <div class="d-flex flex-column justify-content-start"><a class="mb-2" href="{% url 'home' %}"><i class="bi bi-arrow-right text-success me-2"></i>Home</a>
+                        <a class="mb-2" href="{% url 'register' %}"><i class="bi bi-arrow-right text-success me-2"></i>Signup</a>
+                        <a class="mb-2" href="{% url 'login' %}"><i class="bi bi-arrow-right text-success me-2"></i>Login</a>
+                        <a class="mb-2" href="{% url 'cart' %}"><i class="bi bi-arrow-right text-success me-2"></i>Cart</a>
+                
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-success ps-3 mb-4 font-weight-bold">Newsletter</h5>
+                <form method="post" action="{% url 'newsletter' %}">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <input type="text" class="form-control p-2" name="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-success text-dark font-weight-bold">Submit</button>
+                    </div>
+                </form>
+                <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
+                <div class="d-flex">
+                    <a class="btn btn-outline-success btn-square me-2 text-success" href="https://twitter.com/?lang=en" target="_blank"><i class="bi bi-twitter text-success"></i></a>
+                    <a class="btn btn-outline-success btn-square me-2 text-success" href="#"><i class="bi bi-facebook text-success"></i></a>
+                    <a class="btn btn-outline-success btn-square me-2 text-success" href="#"><i class="bi bi-linkedin text-success"></i></a>
+                    <a class="btn btn-outline-success btn-square text-success" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram text-success"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid bg-dark text-white-50 py-4 ">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Electronics gadget management system : </a> All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-right text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white" href="#">Chitra Kalbende</a></p>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+    

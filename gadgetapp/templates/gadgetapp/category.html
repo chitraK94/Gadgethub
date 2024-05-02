@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container-fluid">
+    <div class="row pt-4">
+
+        {% for gadget in gadget %}
+
+        <div class="col-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-item">
+                        <a href="{% url 'gadget_detail' gadget.id %}"><img src="{{gadget.image.url}}"  class="img-fluid "></a>
+
+                        <p>{{gadget.name}}</p>
+                        <hr>
+                        <p><b>&#8377; {{gadget.price}}</b></p>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+        {% endfor %}
+
+        </div>
+
+
+    </div>
+
+{% endblock %}

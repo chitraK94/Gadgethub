@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+
+{% block content %}
+<div class="row">
+    <div class="container pt-4">
+        <h1>Proceed To Pay </h1>
+        <p>Total amount : {{ total_amount }}</p>
+        <form action="{% url 'payment_confirmation' %}" method="get">
+            {% csrf_token %}
+            <input type="hidden" name="total_amount" value="total_amount">
+            <button type="submit" class="btn btn-primary">Confirm Payment</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
